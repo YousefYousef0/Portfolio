@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+html{
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 20px;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0ea8f0;
+    position: fixed;
+}
+.navLeft{
+    margin: 20px 30px;
+}
+.navLeft a{
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 30px;
+}
+.activate, .navLeft a:hover{
+    border-bottom: 1px solid darkred;
+}
+.navRight{
+    margin: 20px;
+}
+.logo{
+    position: absolute;
+}
+.logo a{
+    position: relative;
+    top: -30px;
+    right: 200px;
+}
+.navRight .logo img{
+    width: 200px;
+}
+
+
+
+section{
+    min-height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+.sec1{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.sec1Left{
+    width: 40%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec1Img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec1Right{
+    background-color: #cd412b;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sec1Welcome{
+    width: 70%;
+    text-align: center;
+}
+.sec1Welcome h1{
+    color: white;
+    font-size: 60px;
+}
+.sec1Welcome p{
+    font-size: 20px;
+    color: #d7d7d7;
+}
+.sec2{
+    
+}
+.sec3{
+    background-color: blue;
+}
+.sec4{
+    background-color: seagreen;
+}
+
+
+
+
+
+
+
+
+
+
+
+
