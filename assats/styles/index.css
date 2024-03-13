@@ -7,6 +7,20 @@ html{
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
     scroll-padding-top: 20px;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+} 
+::-webkit-scrollbar-thumb {
+    background: #0ea8f0; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #037bb3; 
 }
 
 .nav{
@@ -16,6 +30,7 @@ html{
     background-color: #0ea8f0;
     position: fixed;
     font-family: "Roboto Slab", serif;
+    z-index: 100;
 }
 .navLeft{
     margin: 20px 30px;
@@ -58,7 +73,6 @@ section{
 }
 .sec1Left{
     width: 40%;
-    /* background-color: #cd412b; */
     background-color: #0ea8f0;
     display: flex;
     justify-content: center;
@@ -80,52 +94,70 @@ section{
     to {transform: translateX(0px);}
 }
 #code1{
-    animation-name: Code1;
-    animation-duration: 3000ms; 
+    animation: Code1 4000ms;
 }
 #code2{
-    animation-name: Code2;
-    animation-duration: 3000ms; 
+    animation: Code2 12000ms infinite;
 }
 #code3{
-    animation-name: Code3;
-    animation-duration: 3000ms; 
+    animation: Code3 5000ms infinite;
 }
 #code4{
-    animation-name: Code4;
-    animation-duration: 3000ms; 
+    animation: Code4 7000ms infinite;
 }
 #code5{
-    animation-name: Code5;
-    animation-duration: 3000ms; 
+    animation: Code5 15000ms;
 }
 #code6{
-    animation-name: Code6;
-    animation-duration: 3000ms; 
+    animation: Code6 10000ms infinite;
 }
 #code7{
-    animation-name: Code7;
-    animation-duration: 3000ms; 
+    animation: Code7 3500ms;
 }
 #code8{
-    animation-name: Code8;
-    animation-duration: 3000ms; 
+    animation: Code8 8000ms infinite;
+}
+#Ellipse1{
+    animation: Ellipse1 3000ms infinite;
+}
+#Ellipse2{
+    animation: Ellipse2 3000ms;
+}
+#Rectangle4{
+    animation: Rectangle4 6000ms infinite;
+}
+#lampa1, #lampa2, #lampa3, #lampa4{
+    cursor: pointer;
 }
 @keyframes Code1 {
     0%{width: 0;}
+    40%{width: 40px;}
+    80%{width: 80px;}
     100%{width: 100px;}
 }
 @keyframes Code2 {
     0%{width: 0;}
-    100%{width: 80px;}
+    20%{width: 40px;}
+    50%{width: 80px;}
+    80%{width: 40px;}
+    100%{width: 0px;}
 }
 @keyframes Code3 {
     0%{width: 0;}
-    100%{width: 84px;}
+    10%{width: 20px;}
+    20%{width: 40px;}
+    40%{width: 60px;}
+    50%{width: 84px;}
+    70%{width: 60px;}
+    85%{width: 20px;}
+    100%{width: 0;}
 }
 @keyframes Code4 {
     0%{width: 0;}
-    100%{width: 78px;}
+    25%{width: 50px;}
+    50%{width: 50px;}
+    75%{width: 78;}
+    100%{width: 0;}
 }
 @keyframes Code5 {
     0%{width: 0;}
@@ -133,7 +165,8 @@ section{
 }
 @keyframes Code6 {
     0%{width: 0;}
-    100%{width: 54px;}
+    50%{width: 54px;}
+    100%{width: 0;}
 }
 @keyframes Code7 {
     0%{width: 0;}
@@ -141,7 +174,33 @@ section{
 }
 @keyframes Code8 {
     0%{width: 0;}
-    100%{width: 100px;}
+    50%{width: 100px;}
+    100%{width: 0px;}
+}
+@keyframes Ellipse1 {
+    0%{transform: translate(0);}
+    50%{transform: translate(10px);}
+    100%{transform: translate(0);}
+}
+@keyframes Ellipse2 {
+    0%{transform: translate(0);}
+    25%{transform: translate(10px);}
+    50%{transform: translate(30px);}
+    75%{transform: translate(10px);}
+    100%{transform: translate(0);}
+}
+@keyframes Rectangle4 {
+    0%{width: 0;}
+    10%{width: 10px;}
+    20%{width: 20px;}
+    30%{width: 25px;}
+    40%{width: 20px;}
+    50%{width: 30px;}
+    60%{width: 58px;}
+    70%{width: 20px;}
+    80%{width: 15px;}
+    90%{width: 10px;}
+    100%{width: 1px;}
 }
 
 .sec1Right{
@@ -166,7 +225,44 @@ section{
     color: #d7d7d7;
 }
 .sec2{
-    
+    display: flex;
+    justify-content: space-between;
+}
+.About{
+    width: 60%;
+    background-color: #0ec7f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 2% 100%); */
+}
+.About h2{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.About p{
+    width: 80%;
+    font-size: 20px;
+}
+.sec2Img{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.slider img{
+    width: 100%;
+}
+.dots{
+    margin-top: 50px;
+}
+.dots svg{
+    margin-left: 10px;
+    cursor: pointer;
 }
 .sec3{
     background-color: blue;
