@@ -1,3 +1,14 @@
+:root{
+    --div-NavBackground: #3361AC;
+    --div-background-color: #FFAA33;
+    --div-bigTextColor: #0F2043;
+    --div-smalTextColor: #E7E6DD;
+    --div-ProjectBigText: black;
+    --div-ProjectSmallText: #E7E6DD;
+    --font-fontNav: "Roboto Slab", serif;
+    --font-fontText: "Oswald", sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -14,38 +25,40 @@ html{
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: var(--div-bigTextColor); 
 } 
 ::-webkit-scrollbar-thumb {
-    background: #0ea8f0; 
+    background: var(--div-NavBackground); 
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #037bb3; 
+    background: #3345ac;
 }
 
 .nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: #0ea8f0;
+    background: var(--div-NavBackground);
     position: fixed;
-    font-family: "Roboto Slab", serif;
+    top: 0;
+    font-family: var(--font-fontNav);
     z-index: 100;
 }
 .navLeft{
-    margin: 20px 30px;
+    margin: 30px 30px;
 }
 .navLeft a{
     color: white;
     text-decoration: none;
     margin-right: 15px;
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: bold;
 }
 .activate, .navLeft a:hover{
-    border-bottom: 1px solid darkred;
+    border-bottom: 1px solid var(--div-smalTextColor);
 }
 .navRight{
-    margin: 20px;
+    margin: 30px;
 }
 .logo{
     position: absolute;
@@ -69,20 +82,34 @@ section{
 .sec1{
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background-color: var(--div-background-color);
 }
 .sec1Left{
-    width: 40%;
-    background-color: #0ea8f0;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .sec1Img{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 100px;
+}
+.sec1Welcome{
+    width: 70%;
+    text-align: center;
+    font-family: var(--font-fontText);
+}
+.sec1Welcome h1{
+    color: var(--div-bigTextColor);
+    font-size: 80px;
+}
+.sec1Welcome p{
+    font-size: 30px;
+    color: var(--div-smalTextColor);
 }
 .svgComputer{
     margin-top: 150px;
@@ -204,81 +231,57 @@ section{
 }
 
 .sec1Right{
-    background-color: white;
-    width: 60%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.sec1Welcome{
+.AboutMe{
     width: 70%;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
+    height: 700px;
+    margin-top: 100px;
+    overflow-y: scroll;
+    border: 3px dashed gray;
+    background-color: white;
+    transform: rotate(-2deg);
+    box-shadow: -10px 10px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: var(--font-fontText);
 }
-.sec1Welcome h1{
+.AboutMe h2{
     color: black;
-    font-size: 60px;
-}
-.sec1Welcome p{
-    font-size: 20px;
-    color: #d7d7d7;
-}
-.sec2{
-    display: flex;
-    justify-content: space-between;
-}
-.About{
-    width: 60%;
-    background-color: #0ec7f0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 2% 100%); */
-}
-.About h2{
     font-size: 40px;
-    margin-bottom: 5px;
+    padding: 50px 0 20px 50px;
 }
-.About p{
-    width: 80%;
+.AboutMe p{
+    color: black;
     font-size: 20px;
+    padding: 0 0 10px 100px;
 }
-.sec2Img{
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.slider img{
-    width: 100%;
-}
-.sec3{
+.sec{
     display: flex;
     justify-content: space-between;
     background-color: #039eb3;
 }
-.ProjRight1{
+.ProjRight{
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.ProjRight1 h2{
+.ProjRight h2{
     font-size: 50px;
     margin-bottom: 10px;
+    color: var(--div-ProjectBigText);
 }
-.ProjRight1 p{
+.ProjRight p{
     width: 80%;
     font-size: 20px;
     text-align: center;
+    color: var(--div-ProjectSmallText);
 }
-.ProjLeft1{
+.ProjLeft{
     width: 60%;
     display: flex;
     flex-direction: column;

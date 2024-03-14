@@ -76,58 +76,71 @@ Lampa.onclick = function(){
     }
 }
 
+let navLeftA = document.querySelectorAll(".navLeft a");
 
-let ProjImg = document.querySelector(".ProjImgs");
-let slider1 = document.querySelector(".slider1 img");
-let slider2 = document.querySelector(".slider2 img");
-let slides1 = document.querySelectorAll(".slide1");
-let slides2 = document.querySelectorAll(".slide2");
+window.addEventListener("scroll", function() {
+    let scrollY = window.scrollY || window.pageYOffset;
+    if (scrollY < 780) {
+        navLeftA[1].classList.remove("activate");
+        navLeftA[0].classList.add("activate");
+    }
+    else{
+        navLeftA[0].classList.remove("activate");
+        navLeftA[1].classList.add("activate");
+    }
+});
 
-if(ProjImg.className.includes("slider1")){
-    for (let i = 0; i < slides1.length; i++) {
-        slides1[i].addEventListener("click", function() {
-            slides1.forEach(slide => {
-                slide.classList.remove("fa-solid");
-                slide.classList.add("fa-regular");
-            });
-    
-            slides1[i].classList.add("fa-solid");
-            slides1[i].classList.remove("fa-regular");
-    
-            slider1.classList.add("fade-out");
-            setTimeout(function() {
-                slider1.src = `/assats/images/p1/Proj1img${i + 1}.jpg`;
-                slider1.classList.remove("fade-out");
-            }, 500);
+
+
+function initializeSlider(sliderClassName, circleClassName, imgClassName) {
+    let slider = document.querySelector(sliderClassName);
+    let circles = document.querySelectorAll(circleClassName);
+    let img = document.querySelector(imgClassName);
+    let currentIndex = 0;
+
+    function switchToNext() {
+        let nextIndex = (currentIndex + 1) % circles.length;
+
+        circles.forEach(circle => {
+            circle.classList.remove("fa-solid");
+            circle.classList.add("fa-regular");
+        });
+
+        circles[nextIndex].classList.add("fa-solid");
+        circles[nextIndex].classList.remove("fa-regular");
+
+        img.classList.add("fade-out");
+        setTimeout(function() {
+            img.src = `/assats/images/p${sliderClassName.slice(7)}/Proj${sliderClassName.slice(-1)}img${nextIndex + 1}.jpg`;
+            img.classList.remove("fade-out");
+        }, 500);
+        currentIndex = nextIndex;
+    }
+    for (let i = 0; i < circles.length; i++) {
+        circles[i].addEventListener("click", function() {
+            switchToNext();
         });
     }
-}
-if(ProjImg.className.includes("slider2")){
-    for (let i = 0; i < slides2.length; i++) {
-        slides2[i].addEventListener("click", function() {
-            slides2.forEach(slide => {
-                slide.classList.remove("fa-solid");
-                slide.classList.add("fa-regular");
-            });
-    
-            slides2[i].classList.add("fa-solid");
-            slides2[i].classList.remove("fa-regular");
-    
-            slider2.classList.add("fade-out");
-            setTimeout(function() {
-                slider2.src = `/assats/images/p1/Proj2img${i + 1}.jpg`;
-                slider2.classList.remove("fade-out");
-            }, 500);
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                setInterval(switchToNext, 5000);
+                observer.disconnect();
+            }
         });
-    }
+    });
+    observer.observe(slider);
 }
 
+initializeSlider(".slider1", ".circle1", ".slider1 img");
+initializeSlider(".slider2", ".circle2", ".slider2 img");
+initializeSlider(".slider3", ".circle3", ".slider3 img");
+initializeSlider(".slider4", ".circle4", ".slider4 img");
+initializeSlider(".slider5", ".circle5", ".slider5 img");
+initializeSlider(".slider6", ".circle6", ".slider6 img");
 
 
-
-function sliders(){
-    
-}
 
 
 
