@@ -77,8 +77,57 @@ Lampa.onclick = function(){
 }
 
 
+let ProjImg = document.querySelector(".ProjImgs");
+let slider1 = document.querySelector(".slider1 img");
+let slider2 = document.querySelector(".slider2 img");
+let slides1 = document.querySelectorAll(".slide1");
+let slides2 = document.querySelectorAll(".slide2");
+
+if(ProjImg.className.includes("slider1")){
+    for (let i = 0; i < slides1.length; i++) {
+        slides1[i].addEventListener("click", function() {
+            slides1.forEach(slide => {
+                slide.classList.remove("fa-solid");
+                slide.classList.add("fa-regular");
+            });
+    
+            slides1[i].classList.add("fa-solid");
+            slides1[i].classList.remove("fa-regular");
+    
+            slider1.classList.add("fade-out");
+            setTimeout(function() {
+                slider1.src = `/assats/images/p1/Proj1img${i + 1}.jpg`;
+                slider1.classList.remove("fade-out");
+            }, 500);
+        });
+    }
+}
+if(ProjImg.className.includes("slider2")){
+    for (let i = 0; i < slides2.length; i++) {
+        slides2[i].addEventListener("click", function() {
+            slides2.forEach(slide => {
+                slide.classList.remove("fa-solid");
+                slide.classList.add("fa-regular");
+            });
+    
+            slides2[i].classList.add("fa-solid");
+            slides2[i].classList.remove("fa-regular");
+    
+            slider2.classList.add("fade-out");
+            setTimeout(function() {
+                slider2.src = `/assats/images/p1/Proj2img${i + 1}.jpg`;
+                slider2.classList.remove("fade-out");
+            }, 500);
+        });
+    }
+}
 
 
+
+
+function sliders(){
+    
+}
 
 
 

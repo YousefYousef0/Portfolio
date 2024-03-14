@@ -257,18 +257,59 @@ section{
 .slider img{
     width: 100%;
 }
+.sec3{
+    display: flex;
+    justify-content: space-between;
+    background-color: #039eb3;
+}
+.ProjRight1{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ProjRight1 h2{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.ProjRight1 p{
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+}
+.ProjLeft1{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ProjImgs{
+    width: 80%;
+    margin: auto;
+}
+.ProjImgs img{
+    max-width: 100%;
+    transition: opacity 0.5s ease;
+    opacity: 1;
+    border-radius: 2px;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.ProjImgs img.fade-out {
+    opacity: 0;
+}
 .dots{
-    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .dots svg{
     margin-left: 10px;
     cursor: pointer;
 }
-.sec3{
-    background-color: blue;
-}
 .sec4{
-    background-color: seagreen;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2e8b71;
 }
 
 
