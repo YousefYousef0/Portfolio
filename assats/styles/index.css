@@ -57,18 +57,15 @@ html{
 .activate, .navLeft a:hover{
     border-bottom: 1px solid var(--div-smalTextColor);
 }
-.navRight{
-    margin: 30px;
-}
 .logo{
-    position: absolute;
+    position: relative;
 }
 .logo a{
-    position: relative;
-    top: -30px;
-    right: 200px;
+    position: absolute;
+    top: 0px;
+    right: 50px;
 }
-.navRight .logo img{
+.logo img{
     width: 200px;
 }
 
@@ -305,7 +302,7 @@ section{
 .dots{
     margin-bottom: 50px;
 }
-.dots svg{
+.dots i{
     margin-left: 10px;
     cursor: pointer;
 }
@@ -320,9 +317,351 @@ section{
 
 
 
+@media only screen and (max-width: 1500px) {
+    .sec1Left{
+        width: 40%;
+        margin-top: 50px;
+    }
+    .sec1Right{
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .navLeft{
+        margin: 30px 30px;
+    }
+    .navLeft a{
+        margin-right: 15px;
+        font-size: 25px;
+    }
+    .logo{
+        position: relative;
+    }
+    .logo a{
+        position: absolute;
+        top: 0px;
+        right: 50px;
+    }
+    .logo img{
+        width: 200px;
+    }
 
+    .sec1Left{
+        width: 40%;
+        margin-top: 50px;
+    }
+    .sec1Img{
+        margin-bottom: 50px;
+        margin-left: 50px;
+    }
+    .sec1Welcome{
+        width: 70%;
+    }
+    .sec1Welcome h1{
+        font-size: 40px;
+    }
+    .sec1Welcome p{
+        font-size: 20px;
+    }
+    .svgComputer{
+        margin-top: 100px;
+    }
 
+    .sec1Right{
+        width: 60%;
+    }
+    .AboutMe{
+        width: 70%;
+        height: 600px;
+        margin-top: 100px;
+        border: 3px dashed gray;
+        transform: rotate(-1deg);
+    }
+    .AboutMe h2{
+        font-size: 40px;
+        padding: 50px 0 20px 20px;
+    }
+    .AboutMe p{
+        font-size: 20px;
+        padding: 0 0 10px 50px;
+    }
+    .ProjRight{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ProjRight h2{
+        font-size: 50px;
+        margin-bottom: 10px;
+        color: var(--div-ProjectBigText);
+    }
+    .ProjRight p{
+        width: 80%;
+        font-size: 20px;
+        text-align: center;
+        color: var(--div-ProjectSmallText);
+    }
+    .ProjLeft{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ProjImgs{
+        width: 80%;
+        margin: auto;
+    }
+    .ProjImgs img{
+        max-width: 100%;
+        transition: opacity 0.5s ease;
+        opacity: 1;
+        border-radius: 2px;
+        box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    .ProjImgs img.fade-out {
+        opacity: 0;
+    }
+    .dots{
+        margin-bottom: 50px;
+    }
+    .dots svg{
+        margin-left: 10px;
+        cursor: pointer;
+    }
+}
 
+@media only screen and (max-width: 900px) {
+    .navLeft{
+        margin: 30px 30px;
+    }
+    .navLeft a{
+        margin-right: 15px;
+        font-size: 20px;
+    }
+    .logo{
+        position: relative;
+    }
+    .logo a{
+        position: absolute;
+        top: 10px;
+        right: 50px;
+    }
+    .logo img{
+        width: 150px;
+    }
 
+    .sec1{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sec1Left{
+        width: 100%;
+        margin-top: 100px;
+    }
+    .sec1Img{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+    .sec1Welcome h1{
+        font-size: 50px;
+    }
+    .sec1Welcome p{
+        font-size: 30px;
+    }
 
+    .sec{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .sec1Right{
+        width: 100%;
+    }
+    .AboutMe{
+        width: 70%;
+        transform: rotate(-1deg);
+    }
+}
 
+@media only screen and (max-width: 600px) {
+    .navLeft{
+        margin: 30px 30px;
+    }
+    .navLeft a{
+        margin-right: 10px;
+        font-size: 25px;
+    }
+    .logo{
+        position: relative;
+    }
+    .logo a{
+        position: absolute;
+        top: -10px;
+        right: 0px;
+    }
+    .logo img{
+        width: 150px;
+    }
+
+    section{
+        scroll-snap-align: none;
+        scroll-snap-stop: none;
+    }
+    .sec1{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sec1Left{
+        width: 100%;
+        margin-top: 100px;
+    }
+    .sec1Img{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-left: 0px;
+    }
+    .sec1Welcome h1{
+        font-size: 50px;
+    }
+    .sec1Welcome p{
+        font-size: 30px;
+    }
+    .svgComputer{
+        margin-top: 50px;
+    }
+
+    .sec{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .sec1Right{
+        width: 100%;
+    }
+    .AboutMe{
+        width: 70%;
+        height: 600px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        border: 3px dashed gray;
+        transform: rotate(-1deg);
+    }
+    .AboutMe h2{
+        font-size: 30px;
+        padding: 50px 0 10px 20px;
+    }
+    .AboutMe p{
+        font-size: 18px;
+        padding: 0 0 10px 20px;
+    }
+    .ProjRight{
+        width: 99%;
+    }
+    .ProjRight h2{
+        font-size: 50px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .ProjRight p{
+        width: 90%;
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    .ProjLeft{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ProjImgs{
+        width: 90%;
+    }
+    .dots{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .dots i{
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .navLeft{
+        margin: 20px 20px;
+    }
+    .navLeft a{
+        margin-right: 10px;
+        font-size: 20px;
+    }
+    .logo{
+        position: relative;
+    }
+    .logo a{
+        position: absolute;
+        top: -10px;
+        right: -20px;
+    }
+    .logo img{
+        width: 100px;
+    }
+
+    .sec1Left{
+        margin-top: 150px;
+    }
+    .sec1Img{
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .sec1Welcome h1{
+        font-size: 40px;
+    }
+    .sec1Welcome p{
+        font-size: 20px;
+    }
+
+    .sec{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .sec1Right{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .AboutMe{
+        width: 70%;
+        height: 600px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border: 2px dashed gray;
+        transform: rotate(0deg);
+    }
+    .AboutMe h2{
+        font-size: 30px;
+        padding: 50px 0 10px 20px;
+    }
+    .AboutMe p{
+        font-size: 18px;
+        padding: 0 0 10px 20px;
+    }
+    .ProjRight h2{
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .ProjRight p{
+        width: 95%;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .ProjImgs{
+        width: 95%;
+    }
+}
