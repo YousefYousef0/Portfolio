@@ -89,6 +89,14 @@ window.addEventListener("scroll", function() {
         navLeftA[1].classList.add("activate");
     }
 });
+navLeftA[0].addEventListener("click", function() {
+    const Home = document.getElementById("Home");
+    Home.scrollIntoView({ behavior: "smooth" });
+});
+navLeftA[1].addEventListener("click", function() {
+    const Works = document.getElementById("Works");
+    Works.scrollIntoView({ behavior: "smooth" });
+});
 
 
 
