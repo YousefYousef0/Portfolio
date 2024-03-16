@@ -77,16 +77,24 @@ Lampa.onclick = function(){
 }
 
 let navLeftA = document.querySelectorAll(".navLeft a");
+let footerHome = document.querySelectorAll(".footerHome");
 
 window.addEventListener("scroll", function() {
     let scrollY = window.scrollY || window.pageYOffset;
     if (scrollY < 780) {
-        navLeftA[1].classList.remove("activate");
         navLeftA[0].classList.add("activate");
+        navLeftA[1].classList.remove("activate");
+        navLeftA[2].classList.remove("activate");
+    }
+    else if(scrollY === document.documentElement.scrollHeight - window.innerHeight){
+        navLeftA[0].classList.remove("activate");
+        navLeftA[1].classList.remove("activate");
+        navLeftA[2].classList.add("activate");
     }
     else{
         navLeftA[0].classList.remove("activate");
         navLeftA[1].classList.add("activate");
+        navLeftA[2].classList.remove("activate");
     }
 });
 navLeftA[0].addEventListener("click", function() {
@@ -96,6 +104,18 @@ navLeftA[0].addEventListener("click", function() {
 navLeftA[1].addEventListener("click", function() {
     const Works = document.getElementById("Works");
     Works.scrollIntoView({ behavior: "smooth" });
+});
+navLeftA[2].addEventListener("click", function() {
+    const Contact = document.getElementById("Contact");
+    Contact.scrollIntoView({ behavior: "smooth" });
+});
+footerHome[0].addEventListener("click", function() {
+    const Home = document.getElementById("Home");
+    Home.scrollIntoView({ behavior: "smooth" });
+});
+footerHome[1].addEventListener("click", function() {
+    const Home = document.getElementById("Home");
+    Home.scrollIntoView({ behavior: "smooth" });
 });
 
 
