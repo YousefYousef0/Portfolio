@@ -759,3 +759,222 @@ section{
         width: 95%;
     }
 }
+
+
+
+@media only screen and (min-height: 1060px){
+    .navLeft{
+        margin: 40px 40px;
+    }
+    .navLeft a{
+        margin-right: 15px;
+        font-size: 40px;
+    }
+    .logo a{
+        top: 0px;
+        right: 50px;
+    }
+    .logo img{
+        width: 300px;
+    }
+    
+    .sec1Left{
+        width: 50%;
+    }
+    .sec1Img{
+        margin-bottom: 100px;
+    }
+    .sec1Welcome{
+        width: 70%;
+    }
+    .sec1Welcome h1{
+        font-size: 80px;
+    }
+    .sec1Welcome p{
+        font-size: 40px;
+    }
+    .svgComputer{
+        margin-top: 150px;
+    }
+
+    .sec1Right{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .AboutMe{
+        width: 70%;
+        height: 700px;
+        margin-top: 100px;
+        border: 3px dashed gray;
+        transform: rotate(-2deg);
+    }
+    .AboutMe h2{
+        color: black;
+        font-size: 40px;
+        padding: 50px 0 20px 50px;
+    }
+    .AboutMe p{
+        color: black;
+        font-size: 20px;
+        padding: 0 0 10px 100px;
+    }
+
+    .ProjRight{
+        width: 40%;
+    }
+    .ProjRight h2{
+        font-size: 70px;
+        margin-bottom: 10px;
+    }
+    .ProjRight p{
+        width: 80%;
+        font-size: 30px;
+    }
+    .ProjLeft{
+        width: 60%;
+    }
+    .ProjImgs{
+        width: 80%;
+    }
+    .dots{
+        margin-bottom: 50px;
+    }
+    .dots i{
+        font-size: 30px;
+        margin-left: 20px;
+    }
+    
+    .sec6{
+        min-height: 30vh;
+    }
+    .footer{
+        min-height: 100px;
+        padding: 30px 50px;
+    }
+    .menu{
+        margin: 10px 0;
+    }
+    .menuItem{
+        list-style: none;
+    }
+    .menuLink{
+        font-size: 2rem;
+        margin: 0 10px;
+        opacity: 0.75;
+        font-weight: 300;
+    }
+    .footer p{
+        color: #fff;
+        margin: 15px 0 10px 0;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+}
+
+@media only screen and (min-height: 1400px){
+    .navLeft{
+        margin: 50px 50px;
+    }
+    .navLeft a{
+        margin-right: 15px;
+        font-size: 60px;
+    }
+    .logo a{
+        top: -50px;
+        right: 50px;
+    }
+    .logo img{
+        width: 550px;
+    }
+    
+    .sec1Left{
+        width: 50%;
+    }
+    .sec1Img{
+        margin-top: 200px;
+        margin-bottom: 100px;
+    }
+    .sec1Img svg{
+        height: 500px;
+    }
+    .sec1Welcome{
+        width: 70%;
+    }
+    .sec1Welcome h1{
+        font-size: 150px;
+    }
+    .sec1Welcome p{
+        font-size: 80px;
+    }
+    .svgComputer{
+        margin-top: 150px;
+    }
+
+    .sec1Right{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .AboutMe{
+        width: 70%;
+        height: 1100px;
+        margin-top: 150px;
+        border: 3px dashed gray;
+        transform: rotate(-2deg);
+    }
+    .AboutMe h2{
+        font-size: 80px;
+        padding: 50px 0 20px 50px;
+    }
+    .AboutMe p{
+        font-size: 50px;
+        padding: 0 0 10px 100px;
+    }
+
+    .ProjRight{
+        width: 40%;
+    }
+    .ProjRight h2{
+        font-size: 100px;
+        margin-bottom: 30px;
+    }
+    .ProjRight p{
+        width: 80%;
+        font-size: 50px;
+    }
+    .ProjLeft{
+        width: 60%;
+    }
+    .ProjImgs{
+        width: 70%;
+    }
+    .dots{
+        margin-bottom: 50px;
+    }
+    .dots i{
+        font-size: 50px;
+        margin-left: 20px;
+    }
+    
+    .sec6{
+        min-height: 30vh;
+    }
+    .footer{
+        min-height: 100px;
+        padding: 30px 50px;
+    }
+    .menu{
+        margin: 20px 0;
+    }
+    .menuLink{
+        font-size: 4rem;
+    }
+    .footer p{
+        font-size: 2rem;
+    }
+}
