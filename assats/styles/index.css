@@ -259,6 +259,10 @@ section{
     display: flex;
     justify-content: space-between;
     background-color: #039eb3;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-size: cover !important;
 }
 .ProjRight{
     width: 40%;
@@ -266,17 +270,16 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 .ProjRight h2{
     font-size: 50px;
     margin-bottom: 10px;
-    color: var(--div-ProjectBigText);
 }
 .ProjRight p{
     width: 80%;
     font-size: 20px;
     text-align: center;
-    color: var(--div-ProjectSmallText);
 }
 .ProjLeft{
     width: 60%;
@@ -314,7 +317,7 @@ section{
 
 .sec6{
     min-height: 30vh;
-    background-color: #039eb3;
+    background-color: #3586ff;
 }
 .footer {
     position: sticky;
@@ -408,6 +411,24 @@ section{
     }
 }
 
+.section1{
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(/assats/images/p1/foodRandomBG.png);
+}
+.section2{
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(/assats/images/p2/Extra-background.png);
+}
+.section3{
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(/assats/images/p3/background_picture.jpg);
+}
+.section4{
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(/assats/images/p4/roomBramhult1.jpg);
+}
+.section5{
+    background:linear-gradient(rgba(0,0,0,0.5), #4d4d4d),url(/assats/images/p5/header.png);
+}
+.section6{
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(/assats/images/p6/guitar3.jpg);
+}
 
 
 
