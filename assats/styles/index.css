@@ -413,25 +413,25 @@ section{
 }
 
 .section1{
-    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(/assats/images/p1/foodRandomBG.png);
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(assats/images/p1/foodRandomBG.png);
 }
 .section2{
-    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(/assats/images/p2/Extra-background.png);
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(assats/images/p2/Extra-background.png);
 }
 .section3{
-    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(/assats/images/p3/background_picture.jpg);
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(assats/images/p3/background_picture.jpg);
 }
 .section4{
-    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(/assats/images/p4/roomBramhult1.jpg);
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(assats/images/p4/roomBramhult1.jpg);
 }
 .section5{
-    background:linear-gradient(rgba(0,0,0,0.5), #4d4d4d),url(/assats/images/p5/header.png);
+    background:linear-gradient(rgba(0,0,0,0.5), #4d4d4d),url(assats/images/p5/header.png);
 }
 .section6{
-    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(/assats/images/p6/guitar3.jpg);
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(assats/images/p6/guitar3.jpg);
 }
 .section7{
-    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(/assats/images/p7/background7.jpg);
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(assats/images/p7/background7.jpg);
 }
 
 
