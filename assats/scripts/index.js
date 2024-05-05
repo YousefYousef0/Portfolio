@@ -139,7 +139,7 @@ function initializeSlider(sliderClassName, circleClassName, imgClassName) {
 
         img.classList.add("fade-out");
         setTimeout(function() {
-            img.src = `/assats/images/p${sliderClassName.slice(7)}/Proj${sliderClassName.slice(-1)}img${nextIndex + 1}.jpg`;
+            img.src = `assats/images/p${sliderClassName.slice(7)}/Proj${sliderClassName.slice(-1)}img${nextIndex + 1}.jpg`;
             img.classList.remove("fade-out");
         }, 500);
         currentIndex = nextIndex;
@@ -167,6 +167,7 @@ initializeSlider(".slider3", ".circle3", ".slider3 img");
 initializeSlider(".slider4", ".circle4", ".slider4 img");
 initializeSlider(".slider5", ".circle5", ".slider5 img");
 initializeSlider(".slider6", ".circle6", ".slider6 img");
+initializeSlider(".slider7", ".circle7", ".slider7 img");
 
 
 

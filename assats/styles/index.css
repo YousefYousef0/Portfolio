@@ -430,7 +430,9 @@ section{
 .section6{
     background:linear-gradient(rgba(0,0,0,0.5), #303030),url(/assats/images/p6/guitar3.jpg);
 }
-
+.section7{
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(/assats/images/p7/background7.jpg);
+}
 
 
 @media only screen and (max-width: 1500px) {
