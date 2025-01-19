@@ -285,10 +285,12 @@ section{
     color: white;
 }
 .ProjRight h2{
+    color: white;
     font-size: 50px;
     margin-bottom: 10px;
 }
 .ProjRight p{
+    color: white;
     width: 80%;
     font-size: 20px;
     text-align: center;
