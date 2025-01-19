@@ -165,12 +165,9 @@ function initializeSlider(sliderClassName, circleClassName, imgClassName) {
     observer.observe(slider);
 }
 
-initializeSlider(".slider1", ".circle1", ".slider1 img");
 initializeSlider(".slider2", ".circle2", ".slider2 img");
 initializeSlider(".slider3", ".circle3", ".slider3 img");
-initializeSlider(".slider4", ".circle4", ".slider4 img");
 initializeSlider(".slider5", ".circle5", ".slider5 img");
-initializeSlider(".slider6", ".circle6", ".slider6 img");
 initializeSlider(".slider7", ".circle7", ".slider7 img");
 initializeSlider(".slider8", ".circle8", ".slider8 img");
 initializeSlider(".slider9", ".circle9", ".slider9 img");
