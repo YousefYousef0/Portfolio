@@ -143,7 +143,7 @@ function initializeSlider(sliderClassName, circleClassName, imgClassName) {
 
         img.classList.add("fade-out");
         setTimeout(function () {
-            img.src = `https://yousefyousef0.github.io/Portfolio/assats/images/p${sliderClassName.slice(7)}/Proj${sliderClassName.slice(-1)}img${nextIndex + 1}.jpg`;
+            img.src = `https://yousefyousef0.github.io/Portfolio/assats/images/p${sliderClassName.slice(7)}/Proj${sliderClassName.slice(7)}img${nextIndex + 1}.jpg`;
             img.classList.remove("fade-out");
         }, 500);
         currentIndex = nextIndex;
@@ -172,6 +172,9 @@ initializeSlider(".slider4", ".circle4", ".slider4 img");
 initializeSlider(".slider5", ".circle5", ".slider5 img");
 initializeSlider(".slider6", ".circle6", ".slider6 img");
 initializeSlider(".slider7", ".circle7", ".slider7 img");
+initializeSlider(".slider8", ".circle8", ".slider8 img");
+initializeSlider(".slider9", ".circle9", ".slider9 img");
+initializeSlider(".slider10", ".circle10", ".slider10 img");
 
 
 

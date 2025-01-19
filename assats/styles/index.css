@@ -445,6 +445,15 @@ section{
 .section7{
     background:linear-gradient(rgba(0,0,0,0.5), #303030),url(https://yousefyousef0.github.io/Portfolio/assats/images/p7/background7.jpg);
 }
+.section8{
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(https://yousefyousef0.github.io/Portfolio/assats/images/p8/background8.jpg);
+}
+.section9{
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(https://yousefyousef0.github.io/Portfolio/assats/images/p9/background9.jpg);
+}
+.section10{
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(https://yousefyousef0.github.io/Portfolio/assats/images/p10/background10.jpg);
+}
 
 
 @media only screen and (max-width: 1500px) {
