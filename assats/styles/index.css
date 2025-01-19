@@ -21,6 +21,17 @@ html{
     scroll-behavior: smooth;
 }
 
+.lightMode{
+    --div-NavBackground: #3361AC;
+    --div-background-color: #FFAA33;
+    --div-bigTextColor: #0F2043;
+}
+.darkMode{
+    --div-NavBackground: #254A85;
+    --div-background-color: #FF9704;
+    --div-bigTextColor: #2A3C59;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -99,6 +110,7 @@ section{
     width: 70%;
     text-align: center;
     font-family: var(--font-fontText);
+    user-select: none;
 }
 .sec1Welcome h1{
     color: var(--div-bigTextColor);
@@ -303,7 +315,7 @@ section{
     opacity: 0;
 }
 .dots{
-    margin-bottom: 50px;
+    margin: 50px auto;
 }
 .dots i{
     margin-left: 10px;
@@ -325,7 +337,7 @@ section{
     top: 100%;
     width: 100%;
     background: #3586ff;
-    min-height: 100px;
+    height: 25vh;
     padding: 20px 50px;
     display: flex;
     justify-content: center;
@@ -413,25 +425,25 @@ section{
 }
 
 .section1{
-    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(/assats/images/p1/foodRandomBG.png);
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(https://yousefyousef0.github.io/Portfolio/assats/images/p1/foodRandomBG.png);
 }
 .section2{
-    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(/assats/images/p2/Extra-background.png);
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(https://yousefyousef0.github.io/Portfolio/assats/images/p2/Extra-background.png);
 }
 .section3{
-    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(/assats/images/p3/background_picture.jpg);
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(https://yousefyousef0.github.io/Portfolio/assats/images/p3/background_picture.jpg);
 }
 .section4{
-    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(/assats/images/p4/roomBramhult1.jpg);
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(https://yousefyousef0.github.io/Portfolio/assats/images/p4/roomBramhult1.jpg);
 }
 .section5{
-    background:linear-gradient(rgba(0,0,0,0.5), #4d4d4d),url(/assats/images/p5/header.png);
+    background:linear-gradient(rgba(0,0,0,0.5), #4d4d4d),url(https://yousefyousef0.github.io/Portfolio/assats/images/p5/header.png);
 }
 .section6{
-    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(/assats/images/p6/guitar3.jpg);
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(https://yousefyousef0.github.io/Portfolio/assats/images/p6/guitar3.jpg);
 }
 .section7{
-    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(/assats/images/p7/background7.jpg);
+    background:linear-gradient(rgba(0,0,0,0.5), #303030),url(https://yousefyousef0.github.io/Portfolio/assats/images/p7/background7.jpg);
 }
 
 
